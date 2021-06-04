@@ -18,7 +18,7 @@ namespace Mando
         private readonly PassType passType;
 
         private readonly float c, a1, a2, a3, b1, b2;
-
+        //testing
         /// <summary>
         /// Array of input values, latest are in front
         /// </summary>
