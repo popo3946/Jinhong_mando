@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E33D29E2-FE75-4229-A8E9-946A454166F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NCDEnterprise</RootNamespace>
+    <AssemblyName>NCDEnterprise</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\NCDEnterprise.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\NCDEnterprise.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AD.cs" />
+    <Compile Include="ASELPro.cs" />
+    <Compile Include="CommunicationLayer.cs" />
+    <Compile Include="ComPortInfo.cs" />
+    <Compile Include="E3C.cs" />
+    <Compile Include="Exception.cs" />
+    <Compile Include="Fusion.cs" />
+    <Compile Include="HelpFunctions.cs" />
+    <Compile Include="Keypad.cs" />
+    <Compile Include="Math.cs" />
+    <Compile Include="Mesh.cs" />
+    <Compile Include="MotionDetection.cs" />
+    <Compile Include="NCDBase.cs" />
+    <Compile Include="NCD.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NCD.Designer.cs">
+      <DependentUpon>NCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCDR2X.cs">
+    </Compile>
+    <Compile Include="NCDR8X.cs">
+    </Compile>
+    <Compile Include="PortSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PortSetting.Designer.cs">
+      <DependentUpon>PortSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pot.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PROXR.cs" />
+    <Compile Include="PROXR_AdvanceConfiguration.cs" />
+    <Compile Include="PROXR_RelayBanks.cs" />
+    <Compile Include="PROXR_Timers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PWM.cs" />
+    <Compile Include="Reactor.cs" />
+    <Compile Include="Scan.cs" />
+    <Compile Include="Series1.cs" />
+    <Compile Include="TaraList.cs" />
+    <Compile Include="TcpWrapper.cs" />
+    <Compile Include="ZR2X.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PortSetting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PortSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

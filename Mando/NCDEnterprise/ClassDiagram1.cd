@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="NCD.NCDProXR">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>NCDProXR.cs</FileName>
+      <HashCode>YcSgBAQgBSBQYpAUogmzQBEnAAqgAUAhIREQBAPcIBg=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Internal" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Struct Name="NCD.E3CIdentification">
+    <Position X="4.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>E3C.cs</FileName>
+      <HashCode>AAAEACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAgA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="NCD.TimerParameters">
+    <Position X="4.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PROXR_Timers.cs</FileName>
+      <HashCode>AAACBBAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="NCD.IE3C">
+    <Position X="4.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>E3C.cs</FileName>
+      <HashCode>AgAgAICAAAAAAAAAAAAAAAAAAAAFAAACCAABAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NCD.ITimers">
+    <Position X="4.25" Y="9" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>PROXR_Timers.cs</FileName>
+      <HashCode>AgAAAKEBAAAAAAIAAgAAQAAAAAAAAAAAAAAABAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NCD.ProXR.IProXR">
+    <Position X="6.75" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>PROXR.cs</FileName>
+      <HashCode>AAAAAAAAAAAAIgAAAAAAAAEAAAAAAAAAAAAAAAAEIAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NCD.ProXR.IRelayBanks">
+    <Position X="7" Y="2.75" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>PROXR_RelayBanks.cs</FileName>
+      <HashCode>AQQABAQgBABAABAUgAgRQBAlAAogIAAAAAEQAAHAIBg=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>
